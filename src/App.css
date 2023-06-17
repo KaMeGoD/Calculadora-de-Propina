@@ -1,0 +1,189 @@
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+#root{
+  background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+}
+
+.card{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+  gap: 2rem;
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  text-align: end;
+  color: hsl(183, 100%, 15%);
+  width:100%
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+h3{
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 2px;
+}
+h2{
+  color: hsl(183, 100%, 15%) ;
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  font-weight: 700;
+
+}
+p{
+  margin: 0;
+  font-size: 12px;
+  color:hsl(172, 72%, 31%);
+}
+
+.card_left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 5%;
+  padding: 3rem;
+}
+
+.block{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.in-line{
+  display: flex;
+  flex-direction: column;
+}
+.real{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finales{
+  font-size: 40px;
+  color:hsl(172, 67%, 45%);
+  margin: 0;
+}
+
+.btn-reset{
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background-color: hsl(172, 67%, 45%);
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color:hsl(172, 70%, 22%);
+}
+
+.btn-reset:hover{
+  cursor: pointer;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+
+
+/* Activos */
+.card_right .btn-desactivad{
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background-color: hsl(172, 67%, 45%);
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color:hsl(172, 70%, 22%);
+  opacity: 20%;
+  cursor: none;
+}
+
+.active{
+  border: 1px solid hsl(172, 67%, 45%);
+}
+
+.activeBtn{
+  background-color: hsl(172, 67%, 45%) ;
+  color: black;
+}
+
+
+@media  (max-width:992px) {
+  .card{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+  .card_left{
+    width: 100%;
+  }
+  .card_right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  input::placeholder{
+    font-size: 18px;
+  }
+}
+@media (max-width: 448px){
+  #root{
+    height: 130vh;
+  }
+}

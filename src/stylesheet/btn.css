@@ -1,0 +1,30 @@
+
+.btnTips{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1rem;
+}
+.btnTip{
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  border-radius: .5rem;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+}
+.btnTip:hover{
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+.custom{
+  width: 100%;
+  background-color: hsl(189, 41%, 97%);
+}
+
+
+.selected{
+  background-color: hsl(172, 67%, 45%);
+  color: black;
+}
